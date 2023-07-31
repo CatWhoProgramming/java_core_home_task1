@@ -1,13 +1,13 @@
 package Task4;
 
 public class Computer {
-    private Computer[] computers = new Computer[5];
-
-    public Computer[] getComputers() {
-        return computers;
+    private String comp;
+    public Computer(String comp){
+        this.comp = comp;
     }
 
-    public void setComputers(Computer[] computers) {
-        this.computers = computers;
+    public  String show(){
+        return comp;
     }
+
 }
