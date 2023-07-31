@@ -46,12 +46,11 @@ public class Main {
     }
 
     private static void fillComputerArray() {
-        Computer comp = new Computer();
+        Computer[] comp = new Computer[]{new Computer("comp1"), new Computer("comp2"),
+                new Computer("comp3"), new Computer("comp4"), new Computer("comp5")};
 
-        for (int i=0; i<comp.getComputers().length; i++ ){
-            String name = "comp"+i;
-            //comp.setComputers(1);
+        for (Computer i : comp) {
+            System.out.println(i.show());
         }
-
     }
 }
